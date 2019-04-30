@@ -37,7 +37,8 @@ $isFormError = $isNameError || $isEmailError || $isZipError;
               <dt>Zip Code <span class="error"><?= $isZipError?"Please, enter zip code with 5 chars":"" ?></span> </dt>
               <dd> <input type="text" name="zip" value="<?= $zip ?>"></dd>
           </dl>
-
+			<input type="radio" checked="false">
+			
           <input type="submit" value="Submit">
       </form>
     <?php } else { ?>
